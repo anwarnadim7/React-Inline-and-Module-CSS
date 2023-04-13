@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
+import styles from './styles/appStyles.module.css'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    return (
+        <div>
+      <h1 className={styles.success}>Success</h1>
+      <h1 style={{fontSize: '50px', color: 'red'}}>Error</h1>
     </div>
-  );
+      );
+  
 }
 
 export default App;
